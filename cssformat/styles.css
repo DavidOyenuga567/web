@@ -1,0 +1,95 @@
+/* external style sheet*/
+
+img {
+  width: 33%;
+
+
+}
+
+html{
+background-color: black;
+
+}
+
+p{
+color: white;
+
+}
+
+h1{
+color: white;
+
+}
+
+h2{
+  color: white;
+  
+  }
+
+  footer p
+  {
+  text-align: center;
+  margin-left: 1px;
+  margin-right: 1%;
+  text-align: center;
+  }
+
+  footer{
+    background-color: grey;
+    padding: 15px;
+  }
+
+  .tab {
+    overflow: hidden;
+    border: 25px solid grey;
+    background-color: grey;
+    padding: 15px;
+    margin: 0;
+    border: none; 
+    text-align: center;
+  }
+
+  ul li
+{
+display: inline;/*put them in line instead of under*/
+}
+
+ul a
+{
+   
+    font-size: 150%;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 1ex;/* turns it round instead of square*/
+    margin-right: 40px;
+    padding: 3px;/* space in the circle like vertically*/
+    color: whitesmoke;/* text colour*/
+    background-color: green;/* back ground colour*/
+
+}
+  
+.logo
+{
+    border: 3px ;
+    float: left;
+    width: 5%;
+    margin-left: 5%;
+    border-radius: 1ex;/* turns it round instead of square*/
+}
+
+.menuContainer
+{
+    text-align: center;
+    background-color: gray;
+    width: 100vw;
+    padding: 15px;
+   
+}
+
+.pic{
+float: left;
+width: 30%;
+padding: 5px;
+
+
+}
