@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="desciption" content="project Website">
+            <meta name="keywords" content="html5, mock webpage, css">
+            <title>Web Design Project</title>
+            <link rel="stylesheet" href="cssformat/styles.css">
+        </head>
+        <body class = "background">
+            <header>
+                <div class = "heading">
+            </header>
+            <section>
+                
+
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="topnav">
+                        <a class="navbar-brand" href="#">
+                        <img src="Images/logo-removebg-preview.png" alt="Logo" style="width: 100px;" class="rounded-pill">
+                      </a>
+                      <ul> <!--this means unordered list like bullet points-->
+                            
+                         <a href="Index.html">Home</a>
+                         <a href="events.html"> Events</a>
+                         <a class="active" href="premium.html">Premium</a>
+                    
+                </ul>
+                    </div>
+                  </nav>
+
+            </section>
+           <br><br>
+         
+            <main>
+               
+                <form action="register_account.html" method="get" id="registration_form">
+                    <fieldset><legend>Registration Information</legend><label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" autofocus required><br>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required placeholder="At least 6 letters or numbers" 
+                    pattern="[a-zA-Z0-9]{6,}" 
+                    title="Must be at least 6 alphanumeric characters"><br>
+                    <label for="verify">Verify Password:</label>
+                    <input type="password" name="verify" id="verify" required><br></fieldset>
+                
+            </main>
+            
+            <footer>
+                <!--This comment is for the <footer> element after the main element on the page-->
+                <p> &copy; 2021 Spring Festival </p>
+            </footer>
+        </body>
+    </html>
