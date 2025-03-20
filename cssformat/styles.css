@@ -1,123 +1,244 @@
-/* Add a black background color to the top navigation */
+/* This part styles the top navigation bar */
 .topnav {
-  background-color: red;
-  overflow: hidden;
+  background-color: red; 
+  overflow: hidden; /* Makes sure the content inside the navigation stays inside the bar */
 }
 
-/* Style the links inside the navigation bar */
+/* This part styles the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: #f2f2f2;
+  float: left; 
+  color: #f2f2f2; 
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 25px
+  padding: 16px 16px; /* Adds space around the text to make the links bigger */
+  text-decoration: none; /* Removes the underline from the links */
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* Change the color of links on hover */
+/* This part changes the style of the links when you hover over them */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #ddd; 
+  color: black; 
 }
 
-/* Add a color to the active/current link */
+/* This part styles the active link (the link that's selected or clicked) */
 .topnav a.active {
-  background-color:black;
-  color: white;
-  
+  background-color: black; 
+  color: white; 
 }
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+/* This part changes the background of the whole page */
+body {
+  background-color: whitesmoke; /* Gives the page a light grayish background */
+  font: 15px Arial, sans-serif; 
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+/* This part centers the title (h1) */
+h1 {
+  text-align: center; 
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+/* This part styles the footer at the bottom of the page */
+footer {
+  position: fixed; /* Keeps the footer always at the bottom of the screen */
+  bottom: 0; 
+  width: 100%; /* Makes the footer span the entire width of the page */
+  background-color: black; 
+  color: white; 
+  text-align: center; 
+  padding: 10px 0; /* Adds space above and below the text */
+  font-size: 16px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+/* This part makes sure all elements inside the page use box-sizing */
+* {
+  box-sizing: border-box; /* Makes sure padding and borders are included in the element’s size */
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+/* This part styles input fields (like text boxes and password boxes) */
+input[type=text], input[type=password] {
+  width: 100%; 
+  padding: 15px; 
+  margin: 5px 0 22px 0; 
+  display: inline-block; /* Makes the input fields appear next to each other */
+  border: none; 
+  background: #f1f1f1; 
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+/* This part changes the style of input fields when you click on them */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd; 
+  outline: none; /* Removes the outline around the input fields when clicked */
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+
+/* This part styles buttons on the page */
+button {
+  background-color: #f44336; 
+  color: white; 
+  padding: 14px 20px; 
+  margin: 0px 0; 
+  border: none; 
+  cursor: pointer; /* Changes the mouse pointer to a hand when hovering over the button */
+  width: 100%; 
+  opacity: 0.9; /* Makes the button slightly transparent */
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+/* This part makes the button change when you hover over it */
+button:hover {
+  opacity: 1; /* Makes the button fully visible (not transparent) when you hover */
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+/* This part styles the signup button */
+.cancelbtn {
+  padding: 14px 20px; 
+  background-color: #04AA6D; /* Makes the signup button green */
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+/* This part styles both the cancel and signup buttons to make them equal in width */
+.cancelbtn, .signupbtn {
+  float: left; /* Makes the buttons appear next to each other */
+  width: 50%; /* Makes the buttons take up half of the available space each */
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+/* This part adds space inside the container */
+.container {
+  padding: 16px; /* Adds space inside the container */
 }
 
-footer
-{
+/* This part clears the float to make sure the container looks right */
+.clearfix::after {
+  content: ""; /* Adds an empty content to the clearfix */
+  clear: both; /* Makes sure that the floated elements are cleared */
+  display: table; /* Makes the clearfix behave like a block element */
+}
 
-position: fixed;
-bottom: 0;
+/* This part centers the text of paragraphs */
+p {
+  text-align: center; }
+
+/* This part removes margin and padding from the body and html */
+body, html {
+  margin: 0; 
+  padding: 0; 
+}
+
+/* This part styles the container to make it look nice */
+.container {
+  width: 90%; /* Makes the container take up 90% of the width of the page */
+  max-width: 1200px; /* Limits the maximum width of the container */
+  margin: 20px auto; /* Adds space around the container and centers it */
+}
+
+/* This part styles the h1 and h2 headings */
+h1, h2 {
+  color: #DA291C; 
+}
+
+/* This part styles the events on the page */
+.event {
+  background: white; 
+  border: 1px solid #ddd; /* Adds a light gray border around the event */
+  border-radius: 8px; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow around the event box */
+}
+
+/* This part styles the title inside the event */
+.event h3 {
+  color: #000; 
+}
+
+/* This part styles the buttons inside the event */
+.btn {
+  display: inline-block; /* Makes the button appear next to other items */
+  padding: 10px 20px; 
+  margin-top: 10px; 
+  background-color: #DA291C; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px; }
+
+/* This part changes the button color when you hover over it */
+.btn:hover {
+  background-color: #A51E14; /* Makes the button a darker red when hovered */
+}
+
+/* Styling for the hero section (main banner at the top) */
+.hero {
+  text-align: center; 
+  padding: 100px 20px; 
+}
+
+/* Styling for the main title inside the hero section */
+.hero h1 {
+  font-size: 50px; 
+  margin-bottom: 10px; 
+}
+
+/* Styling for the paragraph inside the hero section */
+.hero p {
+  font-size: 20px; 
+  margin-bottom: 20px; 
+}
+
+/* Button styling */
+.btn {
+  background-color: #DA291C; 
+  color: white; 
+  padding: 10px 20px; 
+  text-decoration: none; 
+  font-weight: bold; /* Makes text bold */
+  border-radius: 5px; }
+
+/* Styling for the Latest News section */
+.latest-news {
+  padding: 40px 20px; 
+  text-align: center; 
+}
+
+/* Styling for individual news cards */
+.news-card {
+  background-color: #333; 
+  padding: 20px; 
+  margin: 10px auto; /* Adds space around the card and centers it */
+  width: 80%; /* Sets width to 80% of the container */
+  max-width: 400px; /* Prevents the card from getting too large */
+  border-radius: 8px; 
+}
+
+/* Styling for news card titles */
+.news-card h3 {
+  margin-bottom: 10px; /* Adds space below the heading */
+}
+
+/* Styling for links inside news cards */
+.news-card a {
+  color: #DA291C; /* Sets text color to red */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Makes text bold */
+}
+
+/* Layout for the section with an image on the left, text in the middle, and an image on the right */
+.image-row {
+  display: flex; /* Uses flexbox for layout */
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Centers items horizontally */
+  padding: 50px 20px; /* Adds space around the section */
+  gap: 30px; /* Adds space between elements */
+  max-width: 1200px; /* Sets a maximum width for responsiveness */
+  margin: auto; /* Centers the entire section */
+}
+
+/* Styling for images placed on the left and right */
+.image-left, .image-right {
+  flex: 1; /* Each image takes equal space */
+  text-align: center; }
+
+/* Styling for images inside the image-row section */
+.image-left img, .image-right img {
+  width: 100%; /* Ensures images are responsive */
+  max-width: 400px; /* Sets a maximum width for the images */
+  border-radius: 8px; 
 }
