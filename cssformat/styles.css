@@ -4,27 +4,74 @@
   overflow: hidden; /* Makes sure the content inside the navigation stays inside the bar */
 }
 
-/* This part styles the links inside the navigation bar */
-.topnav a {
-  float: left; 
-  color: #f2f2f2; 
-  text-align: center;
-  padding: 16px 16px; /* Adds space around the text to make the links bigger */
-  text-decoration: none; /* Removes the underline from the links */
-  font-size: 25px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.navbar .topnav ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align items in a row */
 }
 
-/* This part changes the style of the links when you hover over them */
-.topnav a:hover {
-  background-color: #ddd; 
-  color: black; 
+.navbar .topnav ul li {
+  margin: 0 10px; /* Add spacing between items */
 }
 
-/* This part styles the active link (the link that's selected or clicked) */
-.topnav a.active {
-  background-color: black; 
-  color: white; 
+.navbar .topnav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: transparent; /* Default background */
+}
+
+.navbar .topnav ul li a.active {
+  background-color: black; /* Highlight active item */
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+/* Navbar container */
+.navbar .topnav {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  background-color: red; /* Background color */
+  padding: 10px 20px;
+}
+
+/* Logo */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 100px;
+  margin-right: 20px; /* Space between logo and menu */
+}
+
+/* Navigation list */
+.navbar .topnav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Space between menu items */
+}
+
+/* Navigation items */
+.navbar .topnav ul li {
+  margin: 0;
+}
+
+.navbar .topnav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+/* Active menu item */
+.navbar .topnav ul li a.active {
+  background-color: black;
+  border-radius: 5px;
 }
 
 /* This part changes the background of the whole page */
@@ -55,6 +102,7 @@ footer {
   box-sizing: border-box; /* Makes sure padding and borders are included in the element’s size */
 }
 
+
 /* This part styles input fields (like text boxes and password boxes) */
 input[type=text], input[type=password] {
   width: 100%; 
@@ -71,17 +119,42 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none; /* Removes the outline around the input fields when clicked */
 }
 
+.signupform{
+  border:1px solid #ccc; 
+  padding: 20px; 
+  max-width: 400px; 
+  margin: auto;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
 
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f5f5f5;
+}
 /* This part styles buttons on the page */
 button {
   background-color: #f44336; 
   color: white; 
   padding: 14px 20px; 
-  margin: 0px 0; 
+   
   border: none; 
   cursor: pointer; /* Changes the mouse pointer to a hand when hovering over the button */
   width: 100%; 
   opacity: 0.9; /* Makes the button slightly transparent */
+  margin-bottom: 65px;
 }
 
 /* This part makes the button change when you hover over it */
@@ -90,7 +163,7 @@ button:hover {
 }
 
 /* This part styles the signup button */
-.cancelbtn {
+.signupbtn {
   padding: 14px 20px; 
   background-color: #04AA6D; /* Makes the signup button green */
 }
@@ -190,7 +263,8 @@ h1, h2 {
   padding: 10px 20px; 
   text-decoration: none; 
   font-weight: bold; /* Makes text bold */
-  border-radius: 5px; }
+  border-radius: 5px; 
+  margin-bottom: 50px;}
 
 /* Styling for the Latest News section */
 .latest-news {
@@ -241,4 +315,8 @@ h1, h2 {
   width: 100%; /* Ensures images are responsive */
   max-width: 400px; /* Sets a maximum width for the images */
   border-radius: 8px; 
+}
+
+.news-card{
+margin-bottom: 50px;
 }
